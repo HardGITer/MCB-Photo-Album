@@ -7,11 +7,13 @@ import { TaskListComponent } from './task-list/task-list.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CallbackComponent } from './callback/callback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskListComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,

@@ -55,7 +55,6 @@ export class TaskListComponent implements OnInit {
 
   onSubmit() {
     // Create the Task.
-    console.log("on sumb");
     this.apiService.postTask(this.task_form.value)
       .subscribe(
         (response) => {

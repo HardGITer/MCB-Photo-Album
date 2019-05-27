@@ -3,11 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  auth: {
+    clientID: 'IqeRApHEDqrPCGxAgK5UaFtEW8jMIhPz',
+    domain: 'dev-hk31tf94.eu.auth0.com', // e.g., you.auth0.com
+    audience: 'http://mcbphotoalbumapi',
+    auth0RedirectUri: 'http://localhost:4200/callback', // URL to return to after auth0 login
+    auth0ReturnTo: 'http://localhost:4200', // URL to return to after auth0 logout
+    scope: 'openid profile'
+  }
 };
 
 /*
- * For easier debugging in development mode, you can import the following file
+ * For e  asier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
  * This import should be commented out in production mode because it will have a negative impact

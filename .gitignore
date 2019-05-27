@@ -1,1 +1,3 @@
 .idea/*
+django/photo_album_project/secure_data
+django/photo_album_api/migrations
