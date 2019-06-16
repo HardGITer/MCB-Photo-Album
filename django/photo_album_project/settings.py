@@ -48,6 +48,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_jwt',
     'photo_album_api',
+    'comment_app',
+    'page_app',
+    'photo_app',
+    'user_app',
     'corsheaders',
 ]
 
@@ -174,3 +178,7 @@ JWT_AUTH = {
     'JWT_ISSUER': JWT_ISSUER,
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'

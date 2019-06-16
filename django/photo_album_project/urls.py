@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from photo_album_api import views as photo_album_api_views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/task/', photo_album_api_views.TaskList.as_view(), name='task-list'),
     path('api/task/<int:task_id>/', photo_album_api_views.TaskDetail.as_view(), name='task-detail'),
-]
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
